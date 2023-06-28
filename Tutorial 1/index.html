@@ -9,20 +9,47 @@
 
     <body>
         <header>
-            <h1 class="text-center text-light">Tutorial</h1>
-            <h2 class="text-center text-light">Cómo usar <span class="badge badge-success">HighCharts JS</span> </h2>
+            <h1 class="text-center text-light">Training</h1>
+            <h2 class="text-center text-light">How to use <span class="badge badge-success">HighCharts JS</span> </h2>
         </header>
 
-        <div class="btn-group" role="group" aria-label="">
-            <button id="btnColumnas" type="button" class="btn btn-secondary">Columnas</button>    
-            <button id="btnLineas" type="button" class="btn btn-primary">Lineas</button>    
-            <button id="btnLineas" type="button" class="btn btn-info">Lineas</button>    
-            <button id="btnPastel" type="button" class="btn btn-dark">Pastel</button>  
-            <button id="btnPrueba" type="button" class="btn btn-danger">Gráfico Prueba</button>    
+        <div class="text-center">
+            <div class="btn-group" role="group" aria-label="">
+                <button id="btnColumns" type="button" class="btn btn-secondary">Columns</button>    
+                <button id="btnLines" type="button" class="btn btn-primary">Lines</button>      
+                <button id="btnPie" type="button" class="btn btn-dark">Pie</button>  
+                <button id="btnTest" type="button" class="btn btn-danger">Test graphic</button>    
+                <button id="btnDatabase" type="button" class="btn btn-info">Graphics from databases</button>  
+            </div>
+        </div>
+        <div id="graphics-container" style="width:100%; height:400px;"></div>
+        
+        <div id="modal-1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><strong>Graphics</strong></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modal-container" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!--Styles-->
         <script src="JQuery/jquery-3.7.0.js"></script>
         <script src="popper/popper.min.js"></script>
         <script src="Bootstrap_4/js/bootstrap.min.js"></script>
+        
+        <!--Highcharts-->
+        <script src="pluggins/HighCharts/code/highcharts.js"></script>
+        <script src="pluggins/HighCharts/code/modules/exporting.js"></script>
+        <script src="pluggins/HighCharts/code/modules/export-data.js"></script>
+        <script src="pluggins/HighCharts/code/modules/drilldown.js"></script>
+        
+        <!--Javascript JQueries-->
+        <script src="codeJS.js"></script>
     </body>
 </html>
